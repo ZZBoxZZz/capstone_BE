@@ -1,0 +1,12 @@
+{
+  "development": {
+    "username": "root",
+    "password": "1234",
+    "database": "capstone",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": "3306"
+  }
+}
+
+

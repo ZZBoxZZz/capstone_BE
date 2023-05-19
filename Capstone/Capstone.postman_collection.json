@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "945ec999-4837-4680-a6bf-ee8cc6738772",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserRouter",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tes@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mat_khau",
+									"value": "68756",
+									"type": "text"
+								},
+								{
+									"key": "ho_ten",
+									"value": "jfie",
+									"type": "text"
+								},
+								{
+									"key": "tuoi",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/PC/Desktop/BE/node30_express/public/img/r1.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fet@gmail.com\",\r\n    \"mat_khau\": \"67856\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/login-user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "homePageRouter",
+			"item": [
+				{
+					"name": "Get Picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/main/homePage-info",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"main",
+								"homePage-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Picture By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/main/homePageByName",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"main",
+								"homePageByName"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "detailPage",
+			"item": [
+				{
+					"name": "Get Picture and User ID by Pic_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/detail/getPictureandHuman/:hinh_id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"detail",
+								"getPictureandHuman",
+								":hinh_id"
+							],
+							"variable": [
+								{
+									"key": "hinh_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comment by Pic_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/detail/getPictureandHuman/:hinh_id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"detail",
+								"getPictureandHuman",
+								":hinh_id"
+							],
+							"variable": [
+								{
+									"key": "hinh_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/detail/createComment",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"detail",
+								"createComment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
